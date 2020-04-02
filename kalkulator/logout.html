@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SISTEM KALKULATOR</title>
+  <script>
+    // Function to change webpage background color
+    function changeBodyBg(color){
+        document.body.style.background = color;
+    }
+   
+</script>
+  <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;>
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #808000;
+}
+
+.active {
+  background-color: #ff5286 ;
+}
+div {
+  background-color: ;
+  width: 300px;
+  border: 15px grey;
+  padding: 50px;
+  margin: 20px;
+}
+</style>
+</head>
+ <body bgcolor="#ffeb7a">
+
+<center>
+  <img src="banner1.jpg" width="1367" height="300"  align="bottom">
+</center>
+<center><div id = "header">
+
+               <marquee><p><b>SELAMAT DATANG KE SISTEM KALKULATOR</b></p></marquee>
+        </div></center>
+   <ul>
+ <li><a href="papar.php">Home page</a></li>
+  <li><a class="" href="login.php">Login</a></li>
+  <li><a href="kira.php">Kalkulator</a></li>
+  <li><a href="logout.html">Log Keluar</a></li>
+</ul>
+<br>
+<center>
+<? php  
+session_start();
+session_destroy();
+echo"Anda sudah log keluar!<br>
+<br>
+<a href=login.html>Laman Utama</a>
+<br>
+<br>
+</center>
+<center><p>Assalammualaikum, <br>
+                           TERIMA KASIH KERANA MENGGUNAKAN SISTEM SAYA.<br>SEMOGA KITE BERJUMPA LAGI.</p>
+                      <p>Sekian wabillahhitaufiq wa hidayah asslammualaikum warahmatullahi wabarakatuh.</p></center>
+<center>
+
+        <label>What colour do you love?</label>
+        <button type="button" onclick="changeBodyBg('#00ffbf');">Terqoise</button>
+        <button type="button" onclick="changeBodyBg('#99ccff');">Light blue</button>
+        <button type="button" onclick="changeBodyBg('#9966ff');">Light Purple</button>
+         <button type="button" onclick="changeBodyBg('#ff0000');">Red</button>
+        <button type="button" onclick="changeBodyBg('#ffcc99');">Pitch</button>
+    
+<script type="text/javascript"><?php echo $bgimage_session."();"; ?></script>
+</center>
+</body>
+</html>
